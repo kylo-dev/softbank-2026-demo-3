@@ -1,0 +1,8 @@
+2026-10-03T01:50:29.733Z [startup-error] Error: ENOENT: no such file or directory, open '/app/data/tasks.json'
+    at readFileSync (node:fs:440:20)
+    at createTasks (file:///app/src/tasks.js:8:35)
+    at createApp (file:///app/src/app.js:39:15)
+    at file:///app/src/server.js:6:18
+    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)

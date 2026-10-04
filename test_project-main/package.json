@@ -1,0 +1,14 @@
+{
+  "name": "iris-demo-web",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "로컬에서는 정상 실행되지만 Docker 배포 시 데이터 파일 누락으로 시작에 실패하는 웹 앱",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "fixtures": "node scripts/fixtures.js"
+  }
+}

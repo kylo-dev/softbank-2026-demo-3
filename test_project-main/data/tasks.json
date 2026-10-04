@@ -1,0 +1,5 @@
+[
+  { "title": "첫 번째 웹 프로젝트 배포하기", "category": "개발", "done": false },
+  { "title": "오류 로그와 진단 결과 확인하기", "category": "확인", "done": false },
+  { "title": "해커톤 아이디어 적어두기", "category": "아이디어", "done": true }
+]

@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "message": "테스트 Docker 이미지에서 실제 수집한 시작 실패 로그",
+  "data": {
+    "projectId": "iris-demo-web",
+    "serviceId": "demo-web",
+    "deploymentId": "demo-missing-runtime-file",
+    "attemptId": "attempt-1",
+    "deploymentStatus": "FAILED",
+    "failedStage": "runtime",
+    "exitCode": 1,
+    "logRange": {
+      "from": "2026-10-03T01:50:29.282Z",
+      "to": "2026-10-03T01:50:29.842Z",
+      "isComplete": true
+    },
+    "logs": [
+      {
+        "id": "runtime-001",
+        "timestamp": "2026-10-03T01:50:29.282Z",
+        "stage": "runtime",
+        "sourceId": "demo-container",
+        "stream": "combined",
+        "sequence": 1,
+        "text": "2026-10-03T01:50:29.733Z [startup-error] Error: ENOENT: no such file or directory, open '/app/data/tasks.json'\n    at readFileSync (node:fs:440:20)\n    at createTasks (file:///app/src/tasks.js:8:35)\n    at createApp (file:///app/src/app.js:39:15)\n    at file:///app/src/server.js:6:18\n    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n"
+      }
+    ],
+    "source": null
+  }
+}

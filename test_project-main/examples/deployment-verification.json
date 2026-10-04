@@ -1,0 +1,31 @@
+{
+  "verified_at": "2026-10-03T01:50:31.775550+00:00",
+  "broken": {
+    "exit_code": 1,
+    "error": "ENOENT",
+    "path": "/app/data/tasks.json"
+  },
+  "fix": "COPY --chown=node:node data ./data",
+  "default_dockerfile_left_broken": true,
+  "fixed": {
+    "health_status": 200,
+    "health": "ok",
+    "page_status": 200,
+    "initial_task_count": 3,
+    "crud": "passed",
+    "shutdown_exit_code": 0,
+    "logs": "2026-10-03T01:50:32.020Z [ready] IRIS demo listening on 0.0.0.0:3000\n2026-10-03T01:50:32.764Z [shutdown] SIGTERM"
+  },
+  "images": [
+    {
+      "tag": "iris-demo-web:broken",
+      "id": "sha256:67938a6d879d980b88d26159a49d1a7e9d56766670c0686666a31b012a2fabd7",
+      "platform": "linux/arm64"
+    },
+    {
+      "tag": "iris-demo-web:fixed",
+      "id": "sha256:f975b37953b22665e0ed22db7abe49454a606bc7e501e3af50195f253e3ef383",
+      "platform": "linux/arm64"
+    }
+  ]
+}
